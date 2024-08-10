@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser";
 import envs from "./config/env.config.js";
 import cors from "cors";
 import { errorHandle } from "./errors/errorHandle.js"
-
+import { logger } from "./utils/logger.js";
 
 connectMongoDB();
 
@@ -35,6 +35,25 @@ initializePassport();
 app.use(cors());
 
 app.use("/api", router);
+
+app.get("/operacionsencilla", (req, res) => {
+  let sum = 0;
+  for (let i = 0; i < 100000; i++) {
+    sum += i;
+  }
+
+  res.send({ sum });
+});
+
+app.get("/operacioncompleja", (req, res) => {
+  let sum = 0;
+  for (let i = 0; i < 5e8; i++) {
+    sum += i;
+  }
+
+  res.send({ sum });
+});
+
 app.use(errorHandle);
 
 app.listen(envs.PORT, () => {
