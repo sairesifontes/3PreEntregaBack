@@ -29,10 +29,15 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+<<<<<<< HEAD
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "twilio": "^5.2.2",
     "winston": "^3.14.2"
+=======
+    "twilio": "^5.2.2",
+    "winston": "^3.14.1"
+>>>>>>> c00b020a287198727bef2dfbba156a4999ac54de
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
