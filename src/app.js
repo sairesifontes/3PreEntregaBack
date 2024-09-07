@@ -8,16 +8,10 @@ import initializePassport from "./config/passport.config.js";
 import cookieParser from "cookie-parser";
 import envs from "./config/env.config.js";
 import cors from "cors";
-<<<<<<< HEAD
 import swaggerUiExpress from "swagger-ui-express";
 import { errorHandle } from "./errors/errorHandle.js";
 import { logger } from "./utils/logger.js";
 import { specs } from "./config/swagger.config.js";
-
-=======
-import { errorHandle } from "./errors/errorHandle.js"
-import { logger } from "./utils/logger.js";
->>>>>>> c00b020a287198727bef2dfbba156a4999ac54de
 
 connectMongoDB();
 

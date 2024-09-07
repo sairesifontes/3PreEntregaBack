@@ -1,9 +1,5 @@
 import { fakerES as faker } from "@faker-js/faker";
 import { userModel } from "../persistences/mongo/models/user.model.js";
-<<<<<<< HEAD
-
-=======
->>>>>>> c00b020a287198727bef2dfbba156a4999ac54de
 
 export const generateUsersMocks = (amount) => {
   const users = [];
